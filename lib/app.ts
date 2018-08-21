@@ -8,7 +8,7 @@ const app: express.Application = express();
 const http = httpModule.createServer(app);
 const io: socketIo.Server = socketIo(http);
 const server: SyslogServer = new SyslogServer();
-const port: string | number = process.env.PORT || 3000;
+const portHttp: string | number = process.env.PORT || 3000;
 
 /* Serves static files */
 app.use(express.static(path.join(path.join(__dirname, '../public'))));
