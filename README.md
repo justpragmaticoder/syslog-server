@@ -21,14 +21,14 @@ Open the project folder in terminal and use the next command:
 ```
 tsc -w
 ```
-As result, the project directory will get a new folder("dist") with compiled ts files.
+As a result, the project directory will get a new folder ("dist") with compiled ts files.
 ### Server starting
 Open the "dist" folder in terminal and use the next command:
 ```
 node app.js
 ```
-Server should start to work. Now you can write a "localhost:3000" or "127.0.0.1:3000" to your browser on the local machine and be ready to see a log flow (when the syslog server will start to receive logs on 514 port).
-### What does syslog client/server need to start send logs(events) to our syslog(UDP) server
+Server should start to work. Now you can write "localhost:3000" or "127.0.0.1:3000" in your browser's field on the local machine and be ready to see a log flow (when the syslog server will start to receive logs on 514th port).
+### What does syslog client/server need to start sending logs(events) to our syslog(UDP) server
 Add the following line to the RULES section of /etc/rsyslog.conf or in RHEL-5 at the end of the /etc/rsyslog.conf
 ```
 # remote host is: name/ip:port, e.g. 192.168.0.1:514, port optional
