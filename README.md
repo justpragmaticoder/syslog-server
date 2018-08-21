@@ -1,6 +1,7 @@
 # Syslog server with the front-end part
 It is a very simple syslog server (based on UDP/Datagram Sockets) with HTTP server for serving a web page and transfering logs to the front-end. The HTTP client gets logs data via sockets and sees a log flow on the web page.
 ## Built With
+- [Typescript](https://github.com/Microsoft/TypeScript)
 - [Express](http://expressjs.com)
 - [Socket.io](https://socket.io/)
 - [syslog-server](https://www.npmjs.com/package/syslog-server)
@@ -46,3 +47,5 @@ In RHEL-5 first stop the default syslog deamon and after that restart the rsyslo
 [root@client ~]# service syslog stop
 [root@client ~]# service rsyslog restart
 ```
+## Authors
+- [Vasyl Protsukovych](https://www.facebook.com/vasiliy.protsukovych)
