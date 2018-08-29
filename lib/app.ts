@@ -21,7 +21,7 @@ app.get('/', (req: express.Request, res: express.Response) => {
 /* Sockets listener */
 io.on('connection', (socket: any) => {
     server.on("message", (value: any) => {
-        let logData: string = value.date + " " + value.host + " " + value.protocol + " " + value.message;
+        let logData: string = value.host + " " + value.protocol + " " + value.message;
         socket.emit('syslog-data', logData);
     });
 });
